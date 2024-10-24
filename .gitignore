@@ -4,3 +4,4 @@
 ./app/processed
 ./app/uploads
 .idea
+__pycache__
