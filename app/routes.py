@@ -2,10 +2,6 @@ from flask import request, jsonify
 from video_processor import process_video_file
 
 def register_routes(app):
-    @app.route("/", methods=["GET"])
-    def index():
-        return jsonify({'success': 'hihi'}), 200
-
     @app.route('/process_video', methods=['POST'])
     def process_video():
         if 'video' not in request.files:
