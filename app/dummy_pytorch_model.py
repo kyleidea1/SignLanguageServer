@@ -2,7 +2,7 @@ def process_frames(input_folder, output_file):
    # 고정된 문장 리스트
    sentences = [
        "종로 찾다 가다 곳 방법",
-       "돈 얼마 맞다 확인",
+       "한국농아인협회 가다",
        "돈 계산 잘못하다"
    ]
    
