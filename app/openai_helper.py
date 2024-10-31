@@ -1,16 +1,16 @@
 import os
 from openai import OpenAI
 
-# api_key = os.getenv("OPENAI_API_KEY")
-# if not api_key:
-#     raise ValueError("API key is missing! Make sure to set it in the environment variables.")
-# client = OpenAI(api_key=api_key)
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("API key is missing! Make sure to set it in the environment variables.")
+client = OpenAI(api_key=api_key)
 
 def read_words_from_file(filename):
     with open(filename, 'r', encoding='utf-8') as file:
         return file.read().split()
 
-client = OpenAI(api_key="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")
+# client = OpenAI(api_key="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")
 
 def ask_chatgpt(words):
     try:
