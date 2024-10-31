@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN pip install -r ./deploy/requirements.txt
 
-RUN sudo apt install ffmpeg
+RUN apt update && apt install ffmpeg -y
 
 EXPOSE 5001
 
