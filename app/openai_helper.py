@@ -10,8 +10,7 @@ def read_words_from_file(filename):
     with open(filename, 'r', encoding='utf-8') as file:
         return file.read().split()
 
-client = OpenAI(api_key="sk-proj-7v7ONn0vYJnTvXstEt2obqhEwKKVPcprORCBybsdxMjBLzKmEDey2BseBTUVlO3Ww5RdFTQpeeT3BlbkFJtyWoS9eI1gDtbdaKm1Fm0snbUX9YUI74XP0wGZxKTbW-ln_2tAAGKMB4917OzjhFRP3YpwuuI
-A")
+client = OpenAI(api_key="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")
 
 def ask_chatgpt(words):
     try:
