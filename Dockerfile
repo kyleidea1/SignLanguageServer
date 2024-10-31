@@ -6,7 +6,8 @@ WORKDIR /app
 
 RUN pip install -r ./deploy/requirements.txt
 
+RUN sudo apt install ffmpeg
+
 EXPOSE 5001
 
 ENTRYPOINT ["python", "main.py"]
-
